@@ -1,0 +1,117 @@
+.header {
+    // position: fixed;
+    z-index: 2;
+    padding: 1rem;
+    // color: $rose;
+    border-bottom: 4px solid $golden-transparency;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: rgba(33, 33, 33, 0.8);
+    z-index: 3;
+
+    &__flex {
+        display: flex;
+        align-items: start;
+        // max-width: 1170px;
+        // width: 100%;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        height: 70px;
+
+        .symbol {
+            width: 105px;
+            height: 65px;;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            filter: drop-shadow(0px 0px 7px $golden-transparency);
+            
+            &__img {
+                // box-shadow: 0px 0px 15px black;
+                // box-shadow: 0px 0px 15px black;
+                width: 110px;
+                height: 110px;
+            }
+            &__text {
+                position: absolute;
+                letter-spacing: 0.1em;
+                margin-top: 10px;
+                font-family: Copperplate;
+                text-shadow: 0 0 8px black;
+                // display: none;
+                // transform: translateX(400%);
+                // top: 30px;
+
+            }
+        }
+
+        .cartBtn {
+            position: relative;
+            cursor: pointer;
+            color: $grey;
+            text-shadow: 0px 0px 15px black;
+
+            &-icon {
+                font-size: 50px;
+            }
+
+            &-items {
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                background: $negro;
+                color: white;
+                padding: 0 5px; 
+                border-radius: 30%;
+
+            }
+        }
+    }
+}
+
+.transformSymbolGIF {
+    animation-duration: 2s;
+    animation-name: transformSymbolGIF;
+}
+
+
+.transformLettersGIF {
+    animation-duration: 2s;
+    animation-name: transformLettersGIF;
+    // color: $rose;
+    color: white;
+}
+
+@keyframes transformSymbolGIF {
+    0% {
+        transform: translateY(-300%);
+    }
+    50% {
+        transform: translateY(50%);
+        // transform: translateX(300%);
+    }
+    100% {
+        transform: translateY(0);
+        // transform: translateX(0);
+    }
+}
+
+
+@keyframes transformLettersGIF {
+    0% {
+        transform: translateX(900%);
+        
+    }
+    25% {
+        color: $blue;
+    }
+    50% {
+        color: $golden;
+        // transform: translateX(0);
+    }
+    100% {
+        color: $rose;
+        transform: translateX(0);
+    }
+}

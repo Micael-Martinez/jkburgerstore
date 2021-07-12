@@ -1,0 +1,146 @@
+.symbol__const {
+    margin: 60px auto;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    
+    &__img {
+        // box-shadow: 0px 0px 15px black;
+        // box-shadow: 0px 0px 15px black;
+        width: 100%;
+        height: 100%;
+    }
+    &__text {
+        position: absolute;
+        letter-spacing: 0.06em;
+        margin-top: 25px;
+        font-family: Copperplate;
+        font-size: 3.85em;
+        color: white;
+        text-shadow: 0 0 8px black;
+        // display: none;
+        // transform: translateX(400%);
+        // top: 30px;
+
+    }
+}
+
+.transformSymbolGIFCONST {
+    animation-duration: 2s;
+    animation-name: transformSymbolGIFCONST;
+}
+
+
+.transformLettersGIFCONST {
+    animation-duration: 2s;
+    animation-name: transformLettersGIFCONST;
+    // color: $rose;
+    color: $golden;
+}
+
+.transformLettersGIFCONSTAfter {
+    animation-name: changeColor;
+    animation-duration: 10.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transformSymbolGIFCONST {
+    0% {
+        transform: translateY(-300%);
+    }
+    50% {
+        transform: translateY(50%);
+        // transform: translateX(300%);
+    }
+    100% {
+        transform: translateY(0);
+        // transform: translateX(0);
+    }
+}
+
+
+@keyframes transformLettersGIFCONST {
+    0% {
+        transform: translateX(300%);
+    }
+    25% {
+        color: $blue;
+    }
+    50% {
+        color: $rose;
+        // transform: translateX(0);
+    }
+    100% {
+        color: $golden;
+        transform: translateX(0);
+
+    }
+}
+@keyframes changeColor {
+    0% {
+        color: $golden;
+    }
+
+    15% {
+        color: $golden;
+    }
+
+    50% {
+        color: $rose;
+    }
+
+    55% {
+        color: $blue;
+    }
+
+    85% {
+        color: $blue;
+    }
+
+    100% {
+        color: $golden;
+    }
+}
+
+
+.container__const__text {
+    position: relative;
+    top: 0px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    line-height: 2em;
+}
+.title {
+    color: blue;
+}
+.mentolado-const {
+    font-weight: bold;
+    color: $blue;
+    font-style: normal;
+    text-shadow: 0 0 0 8px white;
+}
+.suave-const {
+    font-weight: bold;
+    color: $golden;
+    font-style: normal;
+    text-shadow: 0 0 0 8px white;
+}
+.energy-const {
+    font-weight: bold;
+    color: $rose;
+    font-style: normal;
+    text-shadow: 0 0 0 8px white;
+}
+
+
+
+@include media-md {
+    .container__const__text {
+        font-size: 1.7em;
+    }
+}

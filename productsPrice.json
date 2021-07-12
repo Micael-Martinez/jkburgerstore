@@ -1,0 +1,164 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Crispy Onion",
+          "type": "crispy",
+          "cant": "20",
+          "selected": "selectedcrispy",
+          "cajaDe20": "cajaDe20crispy",
+          "cajaDe10": "cajaDe10crispy",
+          "symbolPrice": "$",
+          "price": "650",
+          "description": "Carne 160g, mayochimi, provoleta parrillera, jamón natural, morrones asados",
+          "description2": "Viene con porción de papas incluida!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/crispy-onion.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Crispy Onion",
+          "type": "crispy",
+          "cant": "20",
+          "selected": "selectedcripsy",
+          "cajaDe20": "cajaDe20crispy",
+          "cajaDe10": "cajaDe10crispy",
+          "symbolPrice": "$",
+          "price": "250",
+          "description": "Carne 160g, cheddar, panceta, cebolla caramelizada, salsa barbacoa, huevo a la plancha",
+          "description2": "Viene con porción de papas incluida!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/crispy-onion.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Provopepper",
+          "type": "provopepper",
+          "cant": "20",
+          "selected": "selectedprovopepper",
+          "cajaDe20": "cajaDe20provopepper",
+          "cajaDe10": "cajaDe10provopepper",
+          "symbolPrice": "$",
+          "price": "650",
+          "description": "Carne 160g, cheddar, panceta, cebolla caramelizada, salsa barbacoa, huevo a la plancha",
+          "description2": "Viene con porción de papas incluida!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/provopepper.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Provopepper",
+          "type": "provopepper",
+          "cant": "20",
+          "selected": "selectedprovopepper",
+          "cajaDe20": "cajaDe20provopepper",
+          "cajaDe10": "cajaDe10provopepper",
+          "symbolPrice": "$",
+          "price": "190",
+          "description": "",
+          "description2": "Viene con porción de papas incluida!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/provopepper.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Umami",
+          "type": "umami",
+          "cant": "20",
+          "selected": "selectedumami",
+          "cajaDe20": "cajaDe20umami",
+          "cajaDe10": "cajaDe10umami",
+          "symbolPrice": "$",
+          "price": "530",
+          "description": "Carne 160g, queso tybo, tomate, cebolla, rúcula, alioli",
+          "description2": "Viene con porción de papas incluida!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/umami.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Umami Veggie",
+          "type": "umami",
+          "cant": "20",
+          "selected": "selectedumami",
+          "cajaDe20": "cajaDe20umami",
+          "cajaDe10": "cajaDe10umami",
+          "symbolPrice": "$",
+          "price": "500",
+          "description": "",
+          "description2": "Viene con porción de papas incluida!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/umami.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "Doble cuarto Libra",
+          "type": "doblecuarto",
+          "cant": "20",
+          "selected": "selecteddoblecuarto",
+          "cajaDe20": "cajaDe20doblecuarto",
+          "cajaDe10": "cajaDe10doblecuarto",
+          "symbolPrice": "$",
+          "price": "600",
+          "description": "Carne 160g, queso tybo, tomate, cebolla, rúcula, alioli",
+          "description2": "Viene con porción de papas incluida!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/doble-cuarto-libra.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Doble Cuarto de Libra",
+          "type": "doblecuarto",
+          "cant": "20",
+          "selected": "selecteddoblecuarto",
+          "cajaDe20": "cajaDe20doblecuarto",
+          "cajaDe10": "cajaDe10doblecuarto",
+          "symbolPrice": "$",
+          "price": "190",
+          "description": "",
+          "description2": "Viene con porción de papas incluida!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/doble-cuarto-libra.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "Heartbreaker",
+          "type": "heartbreaker",
+          "cant": "20",
+          "selected": "selectedheartbreaker",
+          "cajaDe20": "cajaDe20heartbreaker",
+          "cajaDe10": "cajaDe10heartbreaker",
+          "symbolPrice": "$",
+          "price": "600",
+          "description": "Carne 160g, queso tybo, tomate, cebolla, rúcula, alioli",
+          "description2": "Viene con porción de papas incluida!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/heartbreaker.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "10" },
+        "fields": {
+          "title": "Heartbreaker Veggie",
+          "type": "heartBreaker",
+          "cant": "20",
+          "selected": "selectedheartbreaker",
+          "cajaDe20": "cajaDe20heartbreaker",
+          "cajaDe10": "cajaDe10heartbreaker",
+          "symbolPrice": "$",
+          "price": "500",
+          "description": "",
+          "description2": "Viene con porción de papas incluida!!",
+          "image": { "fields": { "file": { "url": "/public/dist/img/heartbreaker.jpg" } } }
+        }
+      }
+    ]
+  }

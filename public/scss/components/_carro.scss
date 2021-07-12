@@ -1,0 +1,191 @@
+    /* ---------- Cart ----------*/
+    .cart-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        // background: rgba(0,0,0,0.2);
+        // backdrop-filter: blur(10px); 
+        // @include transition-ease;
+        z-index: 10;
+        visibility: hidden;
+
+        .cart {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 90%;
+
+            height: 100%;
+            overflow: scroll;
+            z-index: 3;
+            padding: 1.5rem;
+            // @include transition-ease;
+            background:
+            linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+            background-color: #131313;
+            background-size: 20px 20px;
+            // backdrop-filter: blur(10px); 
+            color: $footer-icon;
+            // border-top-left-radius: 40px;
+            // border-bottom-left-radius: 40px;
+            border: 6px inset rgba(0,0,0,.3);
+            
+            transform: translateX(0%);
+
+            &:hover {
+                box-shadow: 0px 0px 120px black;
+            }
+
+            .close-cart {
+                // @include transition-ease;
+                font-size: 1.9rem;
+                padding: .5rem;
+                cursor: pointer;
+                color: $item-title;
+            }
+
+            &-title {
+                text-transform: capitalize;
+                text-align: center;
+                letter-spacing: $mainSpacing;
+                color: $item-title;
+                font-weight: 700;
+            }
+
+
+            &-item {
+                display: grid;
+                align-items: center;
+                grid-template-columns: auto 1fr auto;
+                grid-column-gap: 1.5rem;
+                margin: 1.5rem 0;
+                backdrop-filter: blur(3px); 
+                // @include transition-ease;
+                
+                &::before {
+                    content:"";
+                    height: 6px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                }
+
+                &.suave::before {
+                    background: linear-gradient(to right, black 0%, $golden 25%, black 100%);
+                }
+                &.energy::before {
+                    background: linear-gradient(to right, black 0%, $rose 25%, black 100%);
+                }
+                &.mentolado::before {
+                    background: linear-gradient(to right, black 0%, $blue 25%, black 100%);
+                }
+
+                // Los 3 tipos de cigarrillos del carrito con sus estilos.
+                &__img {
+                    width: 175px;
+                    height: 200px;
+
+                    &.mentolado {
+                        filter: drop-shadow(0 2px 3px rgba($blue, 0.7));
+                    }
+
+                    &.suave {
+                        filter: drop-shadow(0 2px 3px rgba($golden, 0.7));
+                    }
+
+                    &.energy {
+                        filter: drop-shadow(0 2px 3px rgba($rose, 0.7));
+                    }
+                }
+
+                &__title {
+                    font-size: 0.85rem;
+                    text-transform: capitalize;
+                    letter-spacing: $mainSpacing;
+                }
+
+                &__span-mentolado {
+                    color: $blue;
+                }
+
+                &__price {
+                    margin: 0.5rem 0;
+                }
+
+                &__remove {
+                    color: $negro;
+                }
+
+                .arriba,
+                .abajo {
+                    cursor: pointer;
+
+                    &.mentolado {
+                        color: $blue;
+                    }
+
+                    &.suave {
+                        color: $golden;
+                    }
+
+                    &.energy {
+                        color: $rose;
+                    }
+                }
+
+                &__remove {
+                    cursor: pointer;
+                    
+                }
+            }
+
+            &-footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &_total {
+                    margin: 1rem 0 1.9rem 0;
+                    font-size: 1.4rem;
+                }
+                &_clean {
+                    font-family: 'SourceSansPro-SemiBold', sans-serif;
+                    background: transparent;
+                    border: 2px solid #A4A5A3;
+                    color: white;
+                    font-size: .9rem;
+                    padding: .7rem .9rem;
+                    cursor: pointer;
+                    letter-spacing: .04rem;
+                    outline: none;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        @include transition-ease;
+                        background-color: #f8f8f8;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .showCart {
+        @include transition-ease;
+        transform: translateX(0%);
+    }
+    .transparentBcg {
+        @include transition-ease;
+        visibility: visible;
+    }
+/* ---------- end of Cart ----------*/

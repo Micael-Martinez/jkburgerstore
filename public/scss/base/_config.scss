@@ -1,0 +1,79 @@
+$golden: rgb(252,193,81);
+$golden-transparency: rgba(252, 193, 81, 0.7);
+$rose: rgb(236,16,77);
+$rose-transparency: rgba(236,16,77, 0.7);
+$blue: rgb(54,118,200);
+$grey: rgb(98,98,98);
+
+$negro: #57514f;
+$marino: #282850;
+$item-title: #A1A1A1;
+$footer-icon: #e3e9ed;
+$mainSpacing: 0.1rem;
+
+// FONTS
+@font-face {
+    font-family: Copperplate;
+    src: url("../../../public/dist/fonts/Copperplate.ttf");   //  ../../../public/dist/fonts/Copperplate.ttf
+}
+@font-face {
+    font-family: SourceSansPro-SemiBold;
+    src: url("../../../public/dist/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
+}
+@font-face {
+
+    font-family: SourceSansPro-Regular;
+    src: url("../../../public/dist/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf")
+}
+// END FONTS
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin transition-ease-slow {
+    transition: all 1.2s ease-in-out;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin media-xll {
+    @media screen and (min-width: 2400px) {
+        @content;
+    }
+}

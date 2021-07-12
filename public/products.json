@@ -1,0 +1,82 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Suaves",
+          "type": "suave",
+          "cant": "20",
+          "selected": "selectedSuave",
+          "cajaDe20": "cajaDe20Suave",
+          "cajaDe10": "cajaDe10Suave",
+          "symbolPrice": "$",
+          "price": "190",
+          "description": "A base de manzanilla, es una hierba fina, de combustión lenta que produce un humo liviano. El efecto principal de este cigarillo es relajante, funciona muy bien para calmar la ansiedad, controlar el sistema nervioso principal y disminuir el estrés, también hemos comprobado que tiene efectos calmantes para dolores de articulaciones y algunos músculos, en si es muy relajante..",
+          "image": { "fields": { "file": { "url": "dist/img/golden-recorte.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Suaves",
+          "type": "suave",
+          "cant": "10",
+          "symbolPrice": "$",
+          "price": "110",
+          "image": { "fields": { "file": { "url": "dist/img/golden-recorte.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Energy & Sex",
+          "type": "energy",
+          "cant": "20",
+          "selected": "selectedEnergy",
+          "cajaDe20": "cajaDe20Energy",
+          "cajaDe10": "cajaDe10Energy",
+          "symbolPrice": "$",
+          "price": "250",
+          "description": "Una mezcla que es energizante y afrodisíaca.<br/> Es un cigarro suave de aroma dulce, muy distinto a los suaves y los fuertes. Su humo es más consistente pero suave. Los efectos energizantes son inmediatos, y mejora la experiencia a la hora de tener relaciones sexuales, aumentando su apetito..",
+          "image": { "fields": { "file": { "url": "dist/img/rose-recorte.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Energy & Sex",
+          "type": "energy",
+          "cant": "10",
+          "symbolPrice": "$",
+          "price": "150",
+          "image": { "fields": { "file": { "url": "dist/img/rose-recorte.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Mentolados",
+          "type": "mentolado",
+          "cant": "20",
+          "selected": "selectedMentolado",
+          "cajaDe20": "cajaDe20Mentolado",
+          "cajaDe10": "cajaDe10Mentolado",
+          "symbolPrice": "$",
+          "price": "190",
+          "description": "Son a base de menta, muy mentolados. Esta es una hierba gruesa, de una combustión un poco más rápida y genera un humo más pesado. El efecto principal de este es aliviar las vías respiratorias, liberando y refrescando el circuito respiratorio, también es relajante..",
+          "image": { "fields": { "file": { "url": "dist/img/blue-recorte.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Mentolados",
+          "type": "mentolado",
+          "cant": 10,
+          "symbolPrice": "$",
+          "price": "110",
+          "image": { "fields": { "file": { "url": "dist/img/blue-recorte.png" } } }
+        }
+      }
+    ]
+  }

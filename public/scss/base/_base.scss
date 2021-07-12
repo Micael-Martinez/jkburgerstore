@@ -1,0 +1,27 @@
+//Extends globals
+%centrado-
+%overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+%button-base {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1em;
+    color: blue;
+}
+
+%ul-base{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+//li {
+    // display: inline-block;
+// }
+%a-base {
+    text-decoration: none;
+}

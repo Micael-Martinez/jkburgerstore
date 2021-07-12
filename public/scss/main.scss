@@ -1,0 +1,81 @@
+@import './base/config';
+@import './base/responsive';
+@import './components/menu';
+@import './components/faq';
+
+@import './layout/construccion';
+@import './layout/header';
+@import './layout/phrase';
+@import './layout/cards';
+@import './layout/instafeed';
+@import './layout/form';
+@import './components/carro';
+
+body {
+    background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+
+    // color: set-text-color($rose);
+    // height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+.grid {
+    display: grid;
+    row-gap: 25px;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+a {
+    color: set-text-color($rose);
+    text-decoration: none;
+}
+
+.text-secondary {
+    color: $blue;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+main {
+
+    .social-icons {
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+
+        a {
+            padding: 0.4rem;
+            @include transition-ease;
+
+            &:hover {
+                color: $rose;
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    color: set-text-color($rose);
+}
