@@ -14,16 +14,16 @@ $mainSpacing: 0.1rem;
 // FONTS
 @font-face {
     font-family: Copperplate;
-    src: url("../../../public/dist/fonts/Copperplate.ttf");   //  ../../../public/dist/fonts/Copperplate.ttf
+    src: url("../../dist/fonts/Copperplate.ttf");   //  ../../../public/dist/fonts/Copperplate.ttf
 }
 @font-face {
     font-family: SourceSansPro-SemiBold;
-    src: url("../../../public/dist/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
+    src: url("../../dist/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
 }
 @font-face {
 
     font-family: SourceSansPro-Regular;
-    src: url("../../../public/dist/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf")
+    src: url("../../dist/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf")
 }
 // END FONTS
 * {

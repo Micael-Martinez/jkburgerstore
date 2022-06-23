@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c8f6284f56.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script> -->
+    <title>JK Burger Store 🍔</title>
+    <link rel="shortcut icon" type="image/ico" href="../dist/img/logo-JK.ico" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="header">
+        <div class="header__flex">
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </div>
+            <div class="symbol">
+                <img class="symbol__img" src="../dist/img/logo-JK.ico" alt="GIF">
+
+            </div>
+
+            <div class="cartBtn">
+                <span class="cartBtn-icon">
+                    <i class="fas fa-cart-plus cart__img"></i>
+                </span>
+                <div class="cartBtn-items">
+                    0
+                </div>
+
+            </div>
+            <nav class="nav">
+                <ul class="menu-nav">
+                    <li class="menu-nav__item active">
+                        <a href="index.html" class="menu-nav__link">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="about.html" class="menu-nav__link">
+                            Clientes
+                        </a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="projects.html" class="menu-nav__link">
+                            Nuestras Variedades
+                        </a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="contact.html" class="menu-nav__link">
+                            ¿Quienes somos?
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- end of navbar -->
+    <!-- <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+data-preference-id="172525822-5e51ff6a-3d88-44ef-a3fb-12ac73274552">
+</script> -->
+
+
+
+
+    <main>
+        <section class="phrase">
+            <div class="container">
+                <article class="phrase__contain">
+                    <span><i class="fas fa-quote-left comilla-izq"></i></span>
+                    <h3>Nuestro Objetivo, llevar a tu encuentro la mejor Hamburguesa Gourmet.</h3><i
+                        class="fas fa-quote-right comilla-der"></i>
+                </article>
+                <!-- <h1>FLIGHT</h1> -->
+            </div>
+        </section>
+
+        <section class="cards-product">
+            <div class="container">
+                <h2 class="cards__title">Elige tu pedido</h2>
+                <div class="grid displayProducts">
+
+                    <!-- <article class="card suave">
+                        <h2 class="card__title suave">Suaves</h2>
+                        <div class="card__img suave"></div>
+                        <p class="card__description suave">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, unde. Accusamus ex, in veniam, laboriosam aut ullam perferendis rem repudiandae eius, corrupti incidunt. Adipisci assumenda, commodi vitae velit recusandae nam.
+                        </p>
+                        <div class="card__price suave">
+                            <div class="card__price-container">
+                                <div>
+                                    <div class="card__price-selec">
+                                        <div class="card__price-selec-20 suave selectedSuave">
+                                             <input type="radio" class="radio" id="20" name="category">
+                                             <label for="20">20 unidades</label>
+                                            <i class="fas fa-chevron-down abajo suave"></i>
+                                        </div>
+                                        <div class="card__price-selec-10 suave">
+                                            <input type="radio" class="radio" id="10" name="category">
+                                            <label for="10">10 unidades</label>
+                                        </div>
+                                    </div>
+
+                                    <span class="card__price-number suave ">$190</span><span class="card__price-place suave">ARS</span>
+                                </div>
+                            </div>
+
+                            <button class="card__price-button suave" data-id="1">
+                                Comprar
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <article class="card energy">
+                        <h2 class="card__title energy">Energy & Sex</h2>
+                        <div class="card__img energy"></div>
+                        <p class="card__description energy">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, unde. Accusamus ex, in veniam, laboriosam aut ullam perferendis rem repudiandae eius, corrupti incidunt. Adipisci assumenda, commodi vitae velit recusandae nam.
+                        </p>
+                        <div class="card__price energy">
+                            <div class="card__price-container">
+                                <div>
+                                    <div class="card__price-selec">
+                                        <div class="card__price-selec-20 energy selectedEnergy">
+                                             <input type="radio" class="radio" id="20" name="category">
+                                             <label for="20">20 unidades</label>
+                                            <i class="fas fa-chevron-down abajo energy"></i>
+                                        </div>
+                                        <div class="card__price-selec-10 energy">
+                                            <input type="radio" class="radio" id="10" name="category">
+                                            <label for="10">10 unidades</label>
+                                        </div>
+                                    </div>
+
+                                    <span class="card__price-number energy ">$190</span><span class="card__price-place energy">ARS</span>
+                                </div>
+                            </div>
+
+                            <button class="card__price-button energy" data-id="2">
+                                Comprar
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <article class="card mentolado">
+                        <h2 class="card__title mentolado">Mentolados</h2>
+                        <div class="card__img mentolado"></div>
+                        <p class="card__description mentolado">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, unde. Accusamus ex, in veniam, laboriosam aut ullam perferendis rem repudiandae eius, corrupti incidunt. Adipisci assumenda, commodi vitae velit recusandae nam.
+                        </p>
+                        <div class="card__price mentolado">
+                            <div class="card__price-container">
+                                <div>
+                                    <div class="card__price-selec">
+                                        <div class="card__price-selec-20 mentolado selectedMentolado">
+                                             <input type="radio" class="radio" id="20" name="category">
+                                             <label for="20">20 unidades</label>
+                                            <i class="fas fa-chevron-down abajo mentolado"></i>
+                                        </div>
+                                        <div class="card__price-selec-10 mentolado">
+                                            <input type="radio" class="radio" id="10" name="category">
+                                            <label for="10">10 unidades</label>
+                                        </div>
+                                    </div>
+
+                                    <span class="card__price-number mentolado ">$190</span><span class="card__price-place mentolado">ARS</span>
+                                </div>
+                            </div>
+
+                            <button class="card__price-button mentolado" data-id="3">
+                                Comprar
+                            </button>
+                        </div>
+                    </article> -->
+                </div>
+            </div>
+        </section>
+        <!-- end of products -->
+
+        <!-- cart -->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+
+                <h2 class="cart-title">Tu pedido</h2>
+                <div class="cart-content">
+                    <!-- cart item -->
+                    <!-- <div class="cart-item mentolado">
+                            <img class="cart-item__img mentolado" src="./img/blue-recorte.png" alt="product">
+                            <div>
+                                <h4 class="cart-item__title">Flight <span class="cart-item__span-mentolado">Fuerte</span></h4>
+                                <h5 class="cart-item__price">$170 ARS</h5>
+                                <span class="cart-item__remove">eliminar</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-chevron-up arriba mentolado"></i>
+                                <p class="item-amount">1</p>
+                                <i class="fas fa-chevron-down abajo mentolado"></i>
+                            </div>
+                        </div> -->
+                    <!-- end of cart item -->
+                </div>
+
+                <div class="cart-footer">
+                    <h3 class="cart-footer_total">Tu total: $ <span class="cart-total">0</span></h3>
+                    <!-- <button class="cart-footer_buy buy-cart" type="button">Añadir otras variedades</button> -->
+                    <button class="cart-footer_clean clear-cart banner-btn">BORRAR PEDIDO</button>
+                </div>
+
+                <!-- FORMULARIO -->
+
+                <section class="sendData">
+                    <div class="sendData__container">
+                        <h2 tabindex="0">Complete el formulario para enviar su pedido!</h2>
+                        <form class="sendData__form" method="GET" action="/index.html">
+                            <input aria-label="Nombre" class="sendData__input" type="text"
+                                placeholder='Nombre y Apellido'>
+                            <input aria-label="Teléfono" class="sendData__input" type="number" placeholder='Teléfono'>
+                            <input aria-label="Nombre" class="sendData__input" type="text" placeholder='Dirección'>
+                            <input aria-label="Nombre" class="sendData__input" type="text" placeholder='Barrio'>
+
+                            <!-- Hour Picker -->
+                            <h1 class="hour__home">A qué hora te gustaría tener el pedido en casa?</h1>
+                            <p class="hour__description">Nuestra cocina abre de 20:00 a 23:00hs</p>
+                            <div class="time-picker" data-time="00:00">
+                                <div class="hour">
+                                    <div class="hr-up"></div>
+                                    <input type="number" class="hr" value="00" />
+                                    <div class="hr-down"></div>
+                                </div>
+
+                                <div class="separator">:</div>
+
+                                <div class="minute">
+                                    <div class="min-up"></div>
+                                    <input type="number" class="min" value="00">
+                                    <div class="min-down">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Hour Picker -->
+
+                    <!-- <button class="button" type="submit">Iniciar sesión</button> -->
+                    <button class="button-buy" type="submit">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        ENVIAR
+                    </button>
+                    </form>
+                    <div class="circle"></div>
+            </div>
+            </section>
+
+            <!-- FORMULARIO -->
+
+        </div>
+        </div>
+
+        </div>
+        <!-- end of Cart -->
+
+        <!-- Instagram feed -->
+        <!-- <div id="instafeeds">
+            <div class="container">
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-44148fc0-c434-41ec-ab08-8318ce086170"></div>
+            </div>
+        </div> -->
+
+
+        <!-- <div class="social-icons">
+                <a href="#!">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="#!">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="#!">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="#!">
+                    <i class="fab fa-github twitter fa-2x"></i>
+                </a>
+            </div> -->
+
+        <section class="section__FAQ">
+            <div class="container">
+                <div class="accordion">
+                    <div class="accordion__item" id="question1">
+                        <a class="accordion__link" href="#question1">
+                            Cómo pedir tus JK?
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </a>
+                        <div class="accordion__answer">
+                            <p>
+                                Elige el tipo de hamburguesas que quieres añadir al pedido junto con su cantidad
+                                <br><br>
+                                Completá el formulario para enviarte a tu pedido
+                                <br><br>
+                                Presioná enviar y tu pedido llegará en el tiempo que asignes!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item" id="question2">
+                        <a href="#question2" class="accordion__link">
+                            Cuánto tiempo tarda en llegar mi pedido?
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </a>
+                        <div class="accordion__answer">
+                            <p>
+                                En el formulario tienes que elegir el horario que quieres que llegue a tu casa!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <!-- ContentFul -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+    <script src="../dist/js/navigator.js"></script>
+    <script src="../dist/js/carrito.js"></script>
+    <script src="../dist/js/OrderList.js"></script>
+    <script src="../dist/js/loadAnimations.js"></script>
+    <script src="../dist/js/timePicker.js"></script>
+
+</body>
+
+</html>
