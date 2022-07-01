@@ -1,10 +1,10 @@
-if (process.env.NODE_ENV !== 'production') {  //Si no estamos en producción, no usamos la biblioteca .env
+if (process.env.NODE_ENV !== 'production') {  //Si no estamos en producción,  usamos la biblioteca .env
     require('dotenv').config()
 }
 
-const MPPublicKey = process.env.MP_PUBLIC_KEY //Se conecta a la API DE MP
-const MPSecretKey = process.env.MP_SECRET_KEY
-console.log(MPPublicKey, MPSecretKey);
+// const MPPublicKey = process.env.MP_PUBLIC_KEY //Se conecta a la API DE MP
+// const MPSecretKey = process.env.MP_SECRET_KEY
+// console.log(MPPublicKey, MPSecretKey);
 
 const express = require('express')
 const app = express()
@@ -42,4 +42,5 @@ app.get('/', (req, res) => {
     })
 })
 
-app.listen(3000)
+const PORT = 3000
+app.listen(PORT, () => console.log(`Escuchando en el puerto ${PORT}`))

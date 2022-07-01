@@ -36,7 +36,7 @@ class Products {
             });
             // console.log(contentful);
 
-            let result = await fetch("../../products.json"); // ./../../../public/products.json o products.json
+            let result = await fetch("../../../products.json"); // ./../../../public/products.json o products.json
             let data = await result.json(); //Interpreta como json javascript.
             let products = data.items; //items es un array de todos los items(objetos) que existen
             // let products = contentful.items;
@@ -47,7 +47,7 @@ class Products {
                 const image = item.fields.image.fields.file.url;
                 return { title, type, cant, selected, symbolPrice, price, description, description2, id, image };
             });
-            console.log(products, "hola"); //un array de objetos
+            console.log(products, "array con todas los objetos hamburguesa"); //un array de objetos
             return products;
             // return data;
         } catch (error) {
@@ -59,10 +59,8 @@ class Products {
 //display products
 class UI {
     displayProducts(products) {
-        //products tiene los 6 elementos de 20 y 2 unidades.
         console.log(products);
         let result = "";
-        //MOSTRAR SOLO EN PANTALLA LOS DE 1 unidad DEL JSON.
         let box20units = products.filter((product) => product.id % 2 === 1);
         console.log(box20units);
 
