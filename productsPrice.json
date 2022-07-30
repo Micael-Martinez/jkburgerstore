@@ -12,7 +12,7 @@
                 "cajaDe20": "cajaDe20crispy",
                 "cajaDe10": "cajaDe10crispy",
                 "symbolPrice": "$",
-                "price": "650",
+                "price": "1050",
                 "description": "Carne 160g, mayochimi, provoleta parrillera, jamón natural, morrones asados",
                 "description2": "Viene con porción de papas incluida!",
                 "image": {
@@ -36,7 +36,7 @@
                 "cajaDe20": "cajaDe20crispy",
                 "cajaDe10": "cajaDe10crispy",
                 "symbolPrice": "$",
-                "price": "250",
+                "price": "2100",
                 "description": "Carne 160g, cheddar, panceta, cebolla caramelizada, salsa barbacoa, huevo a la plancha",
                 "description2": "Viene con porción de papas incluida!",
                 "image": {
@@ -60,7 +60,7 @@
                 "cajaDe20": "cajaDe20provopepper",
                 "cajaDe10": "cajaDe10provopepper",
                 "symbolPrice": "$",
-                "price": "650",
+                "price": "1050",
                 "description": "Carne 160g, cheddar, panceta, cebolla caramelizada, salsa barbacoa, huevo a la plancha",
                 "description2": "Viene con porción de papas incluida!",
                 "image": {
@@ -84,7 +84,7 @@
                 "cajaDe20": "cajaDe20provopepper",
                 "cajaDe10": "cajaDe10provopepper",
                 "symbolPrice": "$",
-                "price": "190",
+                "price": "2100",
                 "description": "",
                 "description2": "Viene con porción de papas incluida!",
                 "image": {
@@ -108,7 +108,7 @@
                 "cajaDe20": "cajaDe20umami",
                 "cajaDe10": "cajaDe10umami",
                 "symbolPrice": "$",
-                "price": "530",
+                "price": "850",
                 "description": "Carne 160g, queso tybo, tomate, cebolla, rúcula, alioli",
                 "description2": "Viene con porción de papas incluida!",
                 "image": {
@@ -132,7 +132,7 @@
                 "cajaDe20": "cajaDe20umami",
                 "cajaDe10": "cajaDe10umami",
                 "symbolPrice": "$",
-                "price": "500",
+                "price": "1700",
                 "description": "",
                 "description2": "Viene con porción de papas incluida!",
                 "image": {
@@ -156,7 +156,7 @@
                 "cajaDe20": "cajaDe20doblecuarto",
                 "cajaDe10": "cajaDe10doblecuarto",
                 "symbolPrice": "$",
-                "price": "600",
+                "price": "1050",
                 "description": "Carne 160g, queso tybo, tomate, cebolla, rúcula, alioli",
                 "description2": "Viene con porción de papas incluida!",
                 "image": {
@@ -180,7 +180,7 @@
                 "cajaDe20": "cajaDe20doblecuarto",
                 "cajaDe10": "cajaDe10doblecuarto",
                 "symbolPrice": "$",
-                "price": "190",
+                "price": "2100",
                 "description": "",
                 "description2": "Viene con porción de papas incluida!",
                 "image": {

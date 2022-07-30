@@ -192,21 +192,7 @@ data-preference-id="172525822-5e51ff6a-3d88-44ef-a3fb-12ac73274552">
 
                 <h2 class="cart-title">Tu pedido</h2>
                 <div class="cart-content">
-                    <!-- cart item -->
-                    <!-- <div class="cart-item mentolado">
-                            <img class="cart-item__img mentolado" src="./img/blue-recorte.png" alt="product">
-                            <div>
-                                <h4 class="cart-item__title">Flight <span class="cart-item__span-mentolado">Fuerte</span></h4>
-                                <h5 class="cart-item__price">$170 ARS</h5>
-                                <span class="cart-item__remove">eliminar</span>
-                            </div>
-                            <div>
-                                <i class="fas fa-chevron-up arriba mentolado"></i>
-                                <p class="item-amount">1</p>
-                                <i class="fas fa-chevron-down abajo mentolado"></i>
-                            </div>
-                        </div> -->
-                    <!-- end of cart item -->
+
                 </div>
 
                 <div class="cart-footer">
@@ -220,12 +206,16 @@ data-preference-id="172525822-5e51ff6a-3d88-44ef-a3fb-12ac73274552">
                 <section class="sendData">
                     <div class="sendData__container">
                         <h2 tabindex="0">Complete el formulario para enviar su pedido!</h2>
-                        <form class="sendData__form" method="GET" action="/index.html">
-                            <input aria-label="Nombre" class="sendData__input" type="text"
+                        <form class="sendData__form" id="formPost" enctype="multipart/form-data" action="/pedidos"
+                            method="POST">
+                            <input aria-label="Nombre" name="username" id="username" class="sendData__input" type="text"
                                 placeholder='Nombre y Apellido'>
-                            <input aria-label="Teléfono" class="sendData__input" type="number" placeholder='Teléfono'>
-                            <input aria-label="Nombre" class="sendData__input" type="text" placeholder='Dirección'>
-                            <input aria-label="Nombre" class="sendData__input" type="text" placeholder='Barrio'>
+                            <input aria-label="Teléfono" name="phone" id="phone" class="sendData__input" type="number"
+                                placeholder='Teléfono'>
+                            <input aria-label="Dirección" name="direccion" id="direccion" class="sendData__input"
+                                type="text" placeholder='Dirección'>
+                            <input aria-label="Barrio" name="barrio" id="barrio" class="sendData__input" type="text"
+                                placeholder='Barrio'>
 
                             <!-- Hour Picker -->
                             <h1 class="hour__home">A qué hora te gustaría tener el pedido en casa?</h1>
@@ -233,7 +223,7 @@ data-preference-id="172525822-5e51ff6a-3d88-44ef-a3fb-12ac73274552">
                             <div class="time-picker" data-time="00:00">
                                 <div class="hour">
                                     <div class="hr-up"></div>
-                                    <input type="number" class="hr" value="00" />
+                                    <input type="number" class="hr" name="hour" value="00" />
                                     <div class="hr-down"></div>
                                 </div>
 
@@ -241,24 +231,26 @@ data-preference-id="172525822-5e51ff6a-3d88-44ef-a3fb-12ac73274552">
 
                                 <div class="minute">
                                     <div class="min-up"></div>
-                                    <input type="number" class="min" value="00">
+                                    <input type="number" class="min" name="minutes" value="00">
                                     <div class="min-down">
                                     </div>
                                 </div>
                             </div>
+                            <button class="button-buy" type="submit">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                ENVIAR
+                            </button>
+                            <div class="circle"></div>
+
+                        </form>
                     </div>
                     <!-- Hour Picker -->
 
                     <!-- <button class="button" type="submit">Iniciar sesión</button> -->
-                    <button class="button-buy" type="submit">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        ENVIAR
-                    </button>
-                    </form>
-                    <div class="circle"></div>
+
             </div>
             </section>
 
@@ -309,7 +301,7 @@ data-preference-id="172525822-5e51ff6a-3d88-44ef-a3fb-12ac73274552">
                                 <br><br>
                                 Completá el formulario para enviarte a tu pedido
                                 <br><br>
-                                Presioná enviar y tu pedido llegará en el tiempo que asignes!
+                                F Presioná enviar y tu pedido llegará en el tiempo que asignes!
                             </p>
                         </div>
                     </div>
@@ -337,11 +329,12 @@ data-preference-id="172525822-5e51ff6a-3d88-44ef-a3fb-12ac73274552">
     <!-- ContentFul -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+    <script type="module" src="../dist/js/carrito.js"></script>
     <script src="../dist/js/navigator.js"></script>
-    <script src="../dist/js/carrito.js"></script>
     <script src="../dist/js/OrderList.js"></script>
     <script src="../dist/js/loadAnimations.js"></script>
     <script src="../dist/js/timePicker.js"></script>
+
 
 </body>
 

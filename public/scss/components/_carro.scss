@@ -65,6 +65,7 @@
                 align-items: center;
                 grid-template-columns: auto 1fr auto;
                 grid-column-gap: 1.5rem;
+
                 margin: 1.5rem 0;
                 backdrop-filter: blur(3px);
                 border: 3px inset rgba(177, 177, 177, 0.3); // @include transition-ease;

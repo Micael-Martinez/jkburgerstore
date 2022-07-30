@@ -1,3 +1,6 @@
+import { formPost } from "./formPost.js";
+
+
 const client = contentful.createClient({
     // This is the space ID. A space is like a project folder in Contentful terms
     space: "zs5ax8zxcdh7",
@@ -56,7 +59,7 @@ class Products {
     }
 }
 
-//display products
+//display products in landing
 class UI {
     displayProducts(products) {
         console.log(products);
@@ -94,7 +97,7 @@ class UI {
                         </div>
                     </div>
 
-                    <button class="card__price-button ${product.type}" data-id= ${product.id}>
+                    <button class="card__price-button ${product.type}" data-id=${product.id}>
                     <i class="fas fa-shopping-cart"></i> Añadir
                     </button>
                 </div>
@@ -303,6 +306,8 @@ class UI {
                 event.target.innerText = "In Cart";
                 event.target.disabled = true;
                 //get product from products, obtene las mismas propiedades que el producto, se clona pero añadiendole un 1 de amount
+
+                //$Tengo que ver si le anado el amount variable
                 let cartItem = { ...Storage.getProduct(id), amount: 1 };
 
                 // console.log(cartItem);
@@ -330,11 +335,19 @@ class UI {
             tempTotal += item.price * item.amount;
             itemsTotal += item.amount;
         });
+
+        const itemPrice = document.querySelector('.cart-item__price') //seguir viendo desde aca
+        console.log(itemPrice)
+        const parseTempTotal = parseFloat(tempTotal.toFixed(2))
+
         cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
         cartItems.innerText = itemsTotal;
+        console.log(cartTotal.innerText, 'innerText de cartTotal')
         //   console.log(cartTotal, cartItems);
     }
 
+
+    //add the burger render in the cart
     addCartItem(item) {
         const div = document.createElement("div");
         div.classList.add("cart-item");
@@ -377,7 +390,10 @@ class UI {
     }
 
     populateCart(cart) {
-        cart.forEach((item) => this.addCartItem(item));
+        cart.forEach((item) => {
+            this.addCartItem(item)
+        });
+
     }
 
     hideCart() {
@@ -390,9 +406,12 @@ class UI {
         clearCartBtn.addEventListener("click", () => {
             this.clearCart();
         });
-
+        // formPost(cart, cartTotal)
         buyCartBtn.addEventListener("click", () => {
             this.buyCart();
+
+
+
         });
 
         // Cart functionality
@@ -450,10 +469,17 @@ class UI {
         this.hideCart();
     }
 
-    buyCart() {
-        alert("Thank you for your purchase");
 
+    buyCart() {
+
+        formPost(cart, cartTotal.innerText)
+        // console.log(cartTotal.innerText, 'innerText de cartTotal en BUYCART')
+
+
+
+        alert("Thank you for your purchase");
         let cartItems = cart.map((item) => item.id);
+
         cartItems.forEach((id) => this.removeItem(id));
 
         while (cartContent.children.length > 0) {
@@ -505,6 +531,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Setup app
     ui.setupAPP();
 
+
     // get all products
     products
         .getProducts()
@@ -513,7 +540,11 @@ document.addEventListener("DOMContentLoaded", () => {
             Storage.saveProducts(products);
         })
         .then(() => {
+
             ui.getBuyButtons();
+
             ui.cartLogic();
+            //remove los items despues de mandarlos al formpost
+            //$ formPost va a tomar como arguments un array de burgers [...burgers, burger] burger object
         });
 });

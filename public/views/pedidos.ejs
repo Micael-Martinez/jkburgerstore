@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="pedidos__main">
+        <div class="pedidos__container">
+            <h1>Pedidos a realizar para el día de hoy</h1>
+
+            <div class="pedidos__wrapper">
+                <% listaDePedidos.forEach(pedido=> { %>
+                    <div class="pedidos__">
+                        <li>
+                            <%= pedido.username %>
+                        </li>
+                        <li>
+                            <%= pedido.phone %>
+                        </li>
+                        <li>
+                            <%= pedido.direccion %>
+                        </li>
+                        <li>
+                            <%= pedido.barrio %>
+                        </li>
+                        <li>
+                            <%= pedido.hour %>
+                        </li>
+                        <li>
+                            <%= pedido.minutes %>
+                        </li>
+                        <li>
+                            <%= pedido.cart %>
+                        </li>
+
+                    </div>
+
+                    <% }) %>
+            </div>
+
+            <div class="pedidos__wrapper2">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../dist/js/pedidos.js"></script>
+
+</body>
+
+</html>
