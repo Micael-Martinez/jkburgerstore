@@ -14,8 +14,8 @@
     }
 
     &__container {
-        border: 3px solid blue;
-        width: 1200px;
+        // border: 3px solid blue;
+        width: 95%;
         height: inherit;
         margin: 0 auto;
         color: white;
@@ -63,37 +63,104 @@
     }
 
     &__description {
-        border: 2px solid green;
+        border: 2px solid rgba(190,190,190, .8);
         display: flex;
         width: 100%;
-        height: 250px;
+        height: 200px;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
 
-    &__burgersToDo {
-        width: 60%;
-        border: 2px solid white;
+    &__title {
+        height: 50px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        gap: 5px;
+        justify-content: space-around;
+        align-items: center;
+
+        &__burgers, &__details {
+            text-align: center;
+            font-style: italic;
+            text-decoration: dotted;
+        }
+
+        &__burgers {
+            width: 70%;
+        }
+
+        &__details {
+            width: 30%;
+        }
+    }
+
+    &__burgersContainer {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        // gap: 25px;
+
+    }
+
+    &__burgersToDo {
+        // width: 70%;
+        // border: 2px solid white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 25px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__container:last-child {
+            border-right: none;
+        }
 
         &__variety {
-            border: 2px solid red;
+            // border: 2px solid red;
+            color: goldenrod;
+            font-size: 1.4em;
+            margin-top: -1.6em;
+            margin-bottom: .6em;
+        }
+
+        &__details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+            border-right: 1px solid rgba(190,190,190, .8)
+        }
+
+        &__details:last-child {
+            border-right: none;
         }
     }
 
     &__contact {
-        width: 40%;
-        border: 2px solid yellow;
+        width: 30%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2px solid pink;
+        gap: 20px;
+        border-left: 2px solid rgba(190,190,190, .8);
     }
 
+    &__totalPrice {
+        width: 100%;
+        padding: .2em 0;
+        text-align: center;
+        font-size: 1.4em;
+    }
 
 }
